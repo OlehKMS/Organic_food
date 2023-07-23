@@ -19,7 +19,7 @@ header {
    width: 100%;
    height: 150px;
    display: flex;
-   
+
 }
 
 ;
@@ -30,7 +30,9 @@ header {
    align-items: center;
    height: 56px;
    padding-top: 65px;
-   };
+}
+
+;
 
 .list_info {
    min-width: 30%;
@@ -88,16 +90,21 @@ header {
    width: 100%;
 }
 
-.content_organic_fruit_vegetables{
+.content_organic_fruit_vegetables {
    position: relative;
    height: 850px
-};
-.content_leavs{
+}
+
+;
+
+.content_leavs {
    position: absolute;
    z-index: 1;
    top: -51px;
    left: -95px;
-};
+}
+
+;
 
 
 .content_info {
@@ -114,8 +121,11 @@ header {
    justify-content: center;
    position: relative;
    z-index: 4;
-};
-.content_info_text{
+}
+
+;
+
+.content_info_text {
    text-align: center;
    font-family: 'DM Sans';
    font-size: 18px;
@@ -129,12 +139,14 @@ header {
    position: relative;
    z-index: 4;
 }
-.content_order{
-   background-image: url("../images/vegetables_content.jpg");
+
+.content_order {
+   background-image: url("../images/vegetables.png");
    background-repeat: no-repeat;
-   height: 100%;
+   height: 850px;
 }
-.content_order_link{
+
+.content_order_link {
    width: fit-content;
    margin: 0 auto;
    margin-top: 60px;
@@ -142,28 +154,32 @@ header {
    font-size: 18px;
    font-weight: 500;
 }
-.content_order_link{
+
+.content_order_link {
    display: flex;
    align-items: center;
    gap: 20px;
 }
-.arrow{
+
+.arrow {
    content: url('../svg/Arrow\ 6.svg');
    padding: 24px 15px;
    border-radius: 50%;
    background-color: #09A66D;
-   &:hover{
+
+   &:hover {
       background-color: #09a66ca0;
    }
 }
 
-.content_reviews_items_order{
+.content_reviews_items_order {
    float: right;
    display: flex;
    flex-direction: column;
    gap: 30px;
 }
-.content_organic_fruit_vegetables_rio{
+
+.content_organic_fruit_vegetables_rio {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -172,20 +188,175 @@ header {
    height: 116px;
    background-color: rgb(255, 255, 255);
 }
-.content_card_info{
+
+.content_card_info {
    font-family: 'DM Sans';
    font-weight: 400;
    display: flex;
    flex-direction: column;
 }
-.content_couner{
-font-size: 48px;
-line-height: 48px;
-text-align: center;
-}
-.content_name{
-    
-   font-size: 18px;
-   line-height: 30px ;
+
+.content_couner {
+   font-size: 48px;
+   line-height: 48px;
    text-align: center;
+}
+
+.content_name {
+
+   font-size: 18px;
+   line-height: 30px;
+   text-align: center;
+}
+
+.why_we_are_the_best {
+   background-color: white;
+   width: 1440px;
+   padding-top: 140px;
+}
+
+.why_we_are_the_best_text {
+   display: flex;
+   flex-direction: column;
+
+   width: 680px;
+   gap: 20px;
+
+   p {
+      text-align: start;
+      font-family: 'DM Sans';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: rgba(85, 85, 85, 1);
+   }
+}
+
+.why_we_are_the_best_card {
+   display: flex;
+   flex-direction: column;
+   gap: 60px;
+}
+
+.bests_card {
+   display: flex;
+   align-items: center;
+   gap: 44px;
+   width: 500px;
+   height: 160px;
+   padding-left: 60px;
+
+   &:nth-child(2) {
+      background-color: rgba(243, 251, 248, 1);
+   }
+}
+
+.bests_card_info {
+   font-family: DM Sans;
+   width: 370px;
+
+   p {
+      font-size: 14px;
+      line-height: 20px;
+      color: rgba(85, 85, 85, 1);
+      font-weight: 400;
+   }
+
+   h3 {
+      color: rgba(34, 34, 34, 1);
+      line-height: 30px;
+      font-size: 20px;
+      font-weight: 700;
+
+   }
+}
+
+.fast_driver_img,
+.order_menu_img,
+.service_time_img {
+   padding: 19px;
+   border-radius: 50%;
+   background-color: rgba(243, 251, 248, 1);
+}
+
+.order_menu_img {
+   background-color: rgba(255, 255, 255, 1);
+}
+
+.why_we_are_the_best_cards_img {
+   margin-top: 56px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.why_we_are_the_best_img {
+   width: 420px;
+   height: 420px;
+   background-image: url("../svg/tehe_dest_bac.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+   /*img {
+      &::after {
+         content: url("../svg/we_best_img_after.svg");
+         position: absolute;
+         left: 110px;
+   
+      }
+      position: absolute;
+      bottom: 78px;
+   }*/
+   img {
+      padding-bottom: 144px;
+      position: relative;
+      z-index: 10;
+   }
+}
+
+.circle {
+   width: 420px;
+   height: 420px;
+   border-radius: none;
+   position: relative;
+}
+
+.circle::before,
+.circle::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   background-color: #fff;
+}
+
+.circle::before {
+   width: 100%;
+   height: 36px;
+   transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.circle::after {
+   width: 100%;
+   height: 36px;
+   transform: translate(-50%, -50%) rotate(-45deg);
+}
+.why_we_are_the_best_img_after{
+   width: 600px;
+   height: 600px;
+   position: absolute;
+   background-image: url("../svg/we_best_img_after.svg");
+   background-repeat: no-repeat;
+   left: 120px;
+}
+.arrow_down{
+   width: fit-content;
+   height: fit-content;
+   margin: 0 auto;
+   
 }
