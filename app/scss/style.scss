@@ -213,6 +213,7 @@ header {
    background-color: white;
    width: 1440px;
    padding-top: 140px;
+   margin: 0 auto;
 }
 
 .why_we_are_the_best_text {
@@ -346,7 +347,8 @@ header {
    height: 36px;
    transform: translate(-50%, -50%) rotate(-45deg);
 }
-.why_we_are_the_best_img_after{
+
+.why_we_are_the_best_img_after {
    width: 600px;
    height: 600px;
    position: absolute;
@@ -354,9 +356,73 @@ header {
    background-repeat: no-repeat;
    left: 120px;
 }
-.arrow_down{
+
+.arrow_down {
    width: fit-content;
    height: fit-content;
    margin: 0 auto;
-   
+
+}
+
+/*special_items*/
+.special_items {
+   width: 1440px;
+   background-color: rgba(9, 166, 109, 0.05);
+   height: fit-content;
+   margin: 0 auto;
+   padding-bottom: 44px
+}
+
+;
+
+.special_item_wrap {
+   display: flex;
+   gap: 50px;
+   padding-top: 88px;
+   margin-top: 146px;
+   margin-bottom: 96px;
+}
+
+.special_items_img img {
+   width: 600px;
+   height: 600px;
+}
+
+.special_items_content {
+
+   p {
+      color: rgba(85, 85, 85, 1);
+      font-family: DM Sans;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+   }
+
+   background-image: url('../svg/leavs.svg');
+   background-repeat: no-repeat;
+   background-position: bottom -24px right -108px;
+   margin-top: 20px;
+   width: 575px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: start;
+   text-align: start;
+   gap: 30px;
+
+   .content_order_link {
+      justify-content: start;
+      margin-right: 66%;
+   }
+}
+.about_us_saying_wrap_info{
+   display: flex;
+   flex-direction: column;
+}
+.about_us_saying_wrap_text {
+   color: rgba(85, 85, 85, 1);
+   font-family: DM Sans;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 30px;
 }
