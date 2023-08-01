@@ -415,14 +415,101 @@ header {
       margin-right: 66%;
    }
 }
-.about_us_saying_wrap_info{
+
+.about_us_saying_wrap_info {
    display: flex;
    flex-direction: column;
+   gap: 30px;
 }
+
 .about_us_saying_wrap_text {
    color: rgba(85, 85, 85, 1);
    font-family: DM Sans;
    font-size: 18px;
    font-weight: 400;
    line-height: 30px;
+}
+
+.about_us_saying_wrap {
+   display: flex;
+   justify-content: space-between;
+   gap: 112px;
+   margin-top: 96px;
+
+}
+
+.about_us_saying_img {
+   margin-top: 60px;
+}
+
+.about_us_saying_block_img {
+   min-width: 446px;
+   height: 445px;
+   border-radius: 50%;
+
+}
+
+.about_us_cards {
+   height: 80px;
+   width: 220px;
+      background-color: rgb(196, 68, 68);
+   border-radius: 12px;
+   padding: 21px 12px;
+}
+.about_us_block_card{
+   
+   display: flex;
+   position: relative;
+}
+.about_us_avatar {
+   position: absolute;
+   img {
+      border-radius: 50%;
+      max-width: 32px;
+      max-height: 32px;
+   }
+}
+.avatar2{
+   left: 24px;
+   z-index: 1;
+}
+.avatar3{
+   left: 46px;
+   z-index: 2;
+}
+.avatar4{
+   left: 68px;
+   z-index: 3;
+}
+.avatar5{
+   left: 90px;
+   z-index: 4;
+}
+.avatar6{
+   left: 112px;
+   z-index: 5;
+}
+.avatar_plus{
+   left: 134px;
+   z-index: 6;
+}
+.avatar_plus::before,
+.avatar_plus::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   background-color: rgb(0, 0, 0);
+}
+
+.avatar_plus::before {
+   width: 16px;
+   height: 3px;
+   transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.avatar_plus::after {
+   width: 16px;
+   height: 3px;
+   transform: translate(-50%, -50%) rotate(360deg);
 }
